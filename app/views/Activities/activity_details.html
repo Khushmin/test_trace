@@ -1,0 +1,139 @@
+-{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Blank template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+<h1 class="nhsuk-heading-xl">Tell us where you went for [community and charity activities]</h1>
+      <form action="/backwards_tracing/activities" accept-charset="UTF-8" method="post">
+        <input type="hidden" name="authenticity_token" value="bs9p6BeFo7EatdtqjFEBjBbfrSvX3ri0EwjONdBL5O9OG8DxJaCrT/xb9mcpzLN073Tx0n7g+Us9UCXrVLCeeg==">
+
+    <input value="community_and_charity_activities" type="hidden" name="backwards_activity_event[exposure_group_type]" id="backwards_activity_event_exposure_group_type">
+
+      <div class="nhsuk-form-group">
+        <label for="backwards-activity-event-exposure-group-field" class="nhsuk-label">Which of these options best describes this activity?</label><select id="backwards-activity-event-exposure-group-field" class="nhsuk-select" name="backwards_activity_event[exposure_group]"><option value=""></option>
+  <option value="boot_sale">Boot sale</option>
+  <option value="charity_event">Charity event</option>
+  <option value="community_event">Community event</option>
+  <option value="corporate_event">Corporate event</option>
+  <option value="communal_hobbies">Communal hobbies</option>
+  <option value="educational_classes">Educational classes</option>
+  <option value="fundraising">Fundraising</option>
+  <option value="other">Other</option>
+  <option value="religious_event">Religious event</option>
+  <option value="volunteering">Volunteering</option></select></div>
+
+      <div class="nhsuk-form-group">
+        <label for="backwards-activity-event-description-field" class="nhsuk-label">Where did this activity take place?</label>
+        <span class="nhsuk-hint" id="backwards-activity-event-description-hint">Name of the establishment</span>
+        <input id="backwards-activity-event-description-field" class="nhsuk-input nhsuk-!-width-two-thirds" aria-describedby="backwards-activity-event-description-hint" type="text" name="backwards_activity_event[description]">
+      </div>
+
+      <div class="nhsuk-form-group">
+        <label for="backwards-activity-event-address-line-1-field" class="nhsuk-label">What town or city did this activity take place in?</label>
+        <span class="nhsuk-hint" id="backwards-activity-event-address-line-1-hint">Enter the address at which this event took place</span>
+        <input id="backwards-activity-event-address-line-1-field" class="nhsuk-input nhsuk-!-width-two-thirds" aria-describedby="backwards-activity-event-address-line-1-hint" type="text" name="backwards_activity_event[address_line_1]">
+      </div>
+
+
+  <div class="nhsuk-form-group">
+    <fieldset class="nhsuk-fieldset" aria-describedby="backwards-activity-event-event-dates-hint">
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s"><h2 class="nhsuk-fieldset__heading">When did this activity take place?</h2>
+      </legend>
+      <span class="nhsuk-hint" id="backwards-activity-event-event-dates-hint">You can select more than one date</span>
+      <div class="nhsuk-checkboxes" data-module="nhsuk-checkboxes">
+
+
+        <div class="nhsuk-checkboxes__item">
+          <input id="backwards-activity-event-event-dates-attributes-0-date-2020-12-03-field" class="nhsuk-checkboxes__input" type="checkbox" value="2020-12-03" name="backwards_activity_event[event_dates_attributes[0]][date]">
+          <label for="backwards-activity-event-event-dates-attributes-0-date-2020-12-03-field" class="nhsuk-label nhsuk-checkboxes__label">Thursday (6 May)</label>
+        </div>
+
+
+        <div class="nhsuk-checkboxes__item">
+          <input id="backwards-activity-event-event-dates-attributes-1-date-2020-12-04-field" class="nhsuk-checkboxes__input" type="checkbox" value="2020-12-04" name="backwards_activity_event[event_dates_attributes[1]][date]">
+          <label for="backwards-activity-event-event-dates-attributes-1-date-2020-12-04-field" class="nhsuk-label nhsuk-checkboxes__label">Friday (7 May)</label>
+        </div>
+
+
+        <div class="nhsuk-checkboxes__item">
+          <input id="backwards-activity-event-event-dates-attributes-2-date-2020-12-05-field" class="nhsuk-checkboxes__input" type="checkbox" value="2020-12-05" name="backwards_activity_event[event_dates_attributes[2]][date]">
+          <label for="backwards-activity-event-event-dates-attributes-2-date-2020-12-05-field" class="nhsuk-label nhsuk-checkboxes__label">Saturday (8 May)</label>
+        </div>
+
+
+        <div class="nhsuk-checkboxes__item">
+          <input id="backwards-activity-event-event-dates-attributes-3-date-2020-12-06-field" class="nhsuk-checkboxes__input" type="checkbox" value="2020-12-06" name="backwards_activity_event[event_dates_attributes[3]][date]">
+          <label for="backwards-activity-event-event-dates-attributes-3-date-2020-12-06-field" class="nhsuk-label nhsuk-checkboxes__label">Sunday (9 May)</label>
+        </div>
+
+
+        <div class="nhsuk-checkboxes__item">
+          <input id="backwards-activity-event-event-dates-attributes-4-date-2020-12-07-field" class="nhsuk-checkboxes__input" type="checkbox" value="2020-12-07" name="backwards_activity_event[event_dates_attributes[4]][date]">
+          <label for="backwards-activity-event-event-dates-attributes-4-date-2020-12-07-field" class="nhsuk-label nhsuk-checkboxes__label">Monday (10 May)</label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input id="backwards-activity-event-event-dates-attributes-4-date-2020-12-07-field" class="nhsuk-checkboxes__input" type="checkbox" value="2020-12-07" name="backwards_activity_event[event_dates_attributes[4]][date]">
+          <label for="backwards-activity-event-event-dates-attributes-4-date-2020-12-07-field" class="nhsuk-label nhsuk-checkboxes__label">Tuesday (11 May)</label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input id="backwards-activity-event-event-dates-attributes-4-date-2020-12-07-field" class="nhsuk-checkboxes__input" type="checkbox" value="2020-12-07" name="backwards_activity_event[event_dates_attributes[4]][date]">
+          <label for="backwards-activity-event-event-dates-attributes-4-date-2020-12-07-field" class="nhsuk-label nhsuk-checkboxes__label">Wednesday (12 May)</label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input id="backwards-activity-event-event-dates-attributes-4-date-2020-12-07-field" class="nhsuk-checkboxes__input" type="checkbox" value="2020-12-07" name="backwards_activity_event[event_dates_attributes[4]][date]">
+          <label for="backwards-activity-event-event-dates-attributes-4-date-2020-12-07-field" class="nhsuk-label nhsuk-checkboxes__label">Thursday (13 May)</label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input id="backwards-activity-event-event-dates-attributes-4-date-2020-12-07-field" class="nhsuk-checkboxes__input" type="checkbox" value="2020-12-07" name="backwards_activity_event[event_dates_attributes[4]][date]">
+          <label for="backwards-activity-event-event-dates-attributes-4-date-2020-12-07-field" class="nhsuk-label nhsuk-checkboxes__label">Friday (14 May)</label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input id="backwards-activity-event-event-dates-attributes-4-date-2020-12-07-field" class="nhsuk-checkboxes__input" type="checkbox" value="2020-12-07" name="backwards_activity_event[event_dates_attributes[4]][date]">
+          <label for="backwards-activity-event-event-dates-attributes-4-date-2020-12-07-field" class="nhsuk-label nhsuk-checkboxes__label">Saturday (15 May)</label>
+        </div>
+  </div>
+</fieldset>
+</div>
+
+    <div class="nhsuk-form-group"><fieldset class="nhsuk-fieldset" aria-describedby="backwards-activity-event-proximity-type-hint"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s"><h2 class="nhsuk-fieldset__heading">Do any of the following describe this activity?</h2></legend><span class="nhsuk-hint" id="backwards-activity-event-proximity-type-hint">Please select any that apply</span><div class="nhsuk-checkboxes" data-module="nhsuk-checkboxes">
+
+        <div class="nhsuk-checkboxes__item">
+          <input id="backwards-activity-event-proximity-type-closed-space-field" class="nhsuk-checkboxes__input" type="checkbox" value="closed_space" name="backwards_activity_event[proximity_type][]">
+          <label for="backwards-activity-event-proximity-type-closed-space-field" class="nhsuk-label nhsuk-checkboxes__label">Closed space - such as an indoor room, office or hall, or inside a vehicle</label>
+        </div>
+        <div class="nhsuk-checkboxes__item">
+          <input id="backwards-activity-event-proximity-type-crowded-field" class="nhsuk-checkboxes__input" type="checkbox" value="crowded" name="backwards_activity_event[proximity_type][]">
+          <label for="backwards-activity-event-proximity-type-crowded-field" class="nhsuk-label nhsuk-checkboxes__label">Crowded - difficulty keeping 2 metres apart from others. Two metres equates to 3 steps apart, or two shopping trolleys end to end</label>
+        </div>
+        <div class="nhsuk-checkboxes__item">
+          <input id="backwards-activity-event-proximity-type-close-contact-field" class="nhsuk-checkboxes__input" type="checkbox" value="close_contact" name="backwards_activity_event[proximity_type][]">
+          <label for="backwards-activity-event-proximity-type-close-contact-field" class="nhsuk-label nhsuk-checkboxes__label">Close contact with other people – being within 2 metres of someone even if not crowded</label>
+        </div>
+  </div>
+</fieldset>
+</div>
+    <a class="nhsuk-button" type="submit" href="activity_confirmation">Continue</a>
+    <a class="nhsuk-button nhsuk-button--secondary" href="activities">Cancel</a>
+  </form>
+
+    </div>
+
+  </div>
+{% endblock %}

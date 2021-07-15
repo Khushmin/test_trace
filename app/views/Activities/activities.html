@@ -1,0 +1,142 @@
+-{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Blank template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+    <h1>
+      Activities
+    </h1>
+    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m"><h2 class="nhsuk-fieldset__heading">Tell us about the activities you have taken part in from [testdate-8] until [today_date]</h2></legend>
+        <div class="nhsuk-form-group">
+
+  <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+
+
+    <div class="nhsuk-hint" id="example-hint">
+      Select all options that are relevant to you.
+    </div>
+
+    <div class="nhsuk-checkboxes">
+
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+          Community and charity activities
+        </label>
+      </div>
+
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+          Eating output
+        </label>
+      </div>
+
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+          Entertainment and day trips
+        </label>
+      </div>
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+          Exercising
+        </label>
+      </div>
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+          Personal care
+        </label>
+      </div>
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+          Private events and celebrations
+        </label>
+      </div>
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+          Public events and mass gatherings
+        </label>
+      </div>
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+          Shopping
+        </label>
+      </div>
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+          Sports events
+        </label>
+      </div>
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+          Travel and commuting
+        </label>
+      </div>
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+          Visting a health or social care setting for non-Covid 19 reasons
+        </label>
+      </div>
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+          Visiting a military setting
+        </label>
+      </div>
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+          Visiting a prison /detention facility
+        </label>
+      </div>
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+          Visting friends and reletives
+        </label>
+      </div>
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+          Worship and prayer
+        </label>
+      </div>
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+          Any other activities involving contact with people
+        </label>
+      </div>
+    </div>
+  </fieldset>
+
+</div>
+
+<a class="nhsuk-button" type="submit" href="activity_details">
+  Save and continue
+</a>
+
+  </div>
+{% endblock %}

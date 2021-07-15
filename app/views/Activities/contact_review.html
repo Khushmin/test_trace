@@ -1,0 +1,82 @@
+-{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Blank template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+      <h1>
+        Did you [activity] with anyone else on [date]?
+      </h1>
+      <div class="nhsuk-table-container">
+    <table class="nhsuk-table" data-controller="contacts" id="">
+
+      <thead class="nhsuk-table__head">
+        <tr class="nhsuk-table__row">
+          <th scope="col" class="nhsuk-table__header">First Name</th>
+          <th scope="col" class="nhsuk-table__header">Last Name</th>
+          <th scope="col" class="nhsuk-table__header">Email</th>
+          <th scope="col" class="nhsuk-table__header">Phone</th>
+          <th scope="col" class="nhsuk-table__header">Under 18?</th>
+            <th scope="col" class="nhsuk-table__header">Date of visit</th>
+
+            <th scope="col" class="nhsuk-table__header">Delete?</th>
+        </tr>
+      </thead>
+
+      <tbody class="nhsuk-table__body" data-target="contact-list.tableBody">
+          <tr class="nhsuk-table__row" id="contact-4077">
+            <td class="nhsuk-table__cell">Contact Firstname</td>
+            <td class="nhsuk-table__cell">Contact Secondname</td>
+            <td class="nhsuk-table__cell">email@email.com</td>
+            <td class="nhsuk-table__cell">07723232323</td>
+            <td class="nhsuk-table__cell">No</td>
+              <td class="nhsuk-table__cell">12 December 2020</td>
+
+              <td class="nhsuk-table__cell">
+                <a aria-label="Delete contact Contact Firstname Contact Secondname" href="/contacts/4077/delete">Change</a>
+              </td>
+          </tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="nhsuk-form-group">
+
+      <fieldset class="nhsuk-fieldset">
+        <div class="nhsuk-radios">
+
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
+            <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+              Yes
+            </label>
+          </div>
+
+          <div class="nhsuk-radios__item">
+            <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
+            <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+              No
+            </label>
+          </div>
+
+        </div>
+      </fieldset>
+
+    </div>
+    <button class="nhsuk-button" type="submit">
+      Continue
+    </button>
+    </div>
+
+  </div>
+{% endblock %}

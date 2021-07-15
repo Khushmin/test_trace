@@ -1,0 +1,89 @@
+-{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Blank template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1 class="nhsuk-heading-xl">Tell us who you [activity] with on [date] </h1>
+      <p class="nhsuk-body">
+    Please only enter details of anyone you haven't already named or identified.
+  </p>
+  <form action="/events/21642/contacts" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="wObIqai5M3gE2KZ1VDFmFyq1ZkjlHk//b8tMp6pNpr2sgv+ZTZ2EYfDOYmpgZeS8D2Y6CMesbISTBSfoBQLLQQ==">
+
+  <a id="contact-base-field-error"></a>
+
+
+  <div class="nhsuk-form-group">
+    <label for="contact-forename-field" class="nhsuk-label">First Name</label>
+    <input id="contact-forename-field" class="nhsuk-input nhsuk-!-width-two-thirds" autocomplete="given-name" spell_check="false" type="text" name="contact[forename]">
+  </div>
+  <div class="nhsuk-form-group">
+    <label for="contact-surname-field" class="nhsuk-label">Last Name</label>
+    <input id="contact-surname-field" class="nhsuk-input nhsuk-!-width-two-thirds" autocomplete="family-name" spell_check="false" type="text" name="contact[surname]">
+  </div>
+
+  <div class="nhsuk-form-group">
+    <label for="contact-email-field" class="nhsuk-label">Email</label>
+    <span class="nhsuk-hint" id="contact-email-hint">For example, mail@example.com</span>
+    <input id="contact-email-field" class="nhsuk-input nhsuk-!-width-two-thirds" aria-describedby="contact-email-hint" autocomplete="email" spellcheck="false" type="email" name="contact[email]">
+  </div>
+  <div class="nhsuk-form-group">
+    <label for="contact-phone-field" class="nhsuk-label">Phone</label>
+    <span class="nhsuk-hint" id="contact-phone-hint">Please give a mobile number if possible</span>
+    <input id="contact-phone-field" class="nhsuk-input nhsuk-!-width-two-thirds" aria-describedby="contact-phone-hint" autocomplete="tel" type="tel" name="contact[phone]">
+  </div>
+
+
+  <div class="nhsuk-checkboxes__item">
+    <input id="contact-unknown-contact-details-true-field" class="nhsuk-checkboxes__input" type="checkbox" value="true" name="contact[unknown_contact_details][]">
+    <label for="contact-unknown-contact-details-true-field" class="nhsuk-label nhsuk-checkboxes__label">Tick this box if you don’t have a phone number or email for this person at hand. It is important you find out their contact details where possible. You can come back and add the contact details later.</label>
+  </div>
+
+  <div class="nhsuk-form-group">
+    <fieldset class="nhsuk-fieldset">
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+        <h2 class="nhsuk-fieldset__heading">Is this person under 18?</h2>
+      </legend><
+      div class="nhsuk-radios" data-module="nhsuk-radios">
+    <div class="nhsuk-radios__item">
+      <input id="contact-under-18-true-field" class="nhsuk-radios__input" type="radio" value="true" name="contact[under_18]">
+      <label for="contact-under-18-true-field" class="nhsuk-label nhsuk-radios__label">Yes - this person is under 18</label>
+    </div>
+    <div class="nhsuk-radios__item">
+      <input id="contact-under-18-field" class="nhsuk-radios__input" type="radio" value="false" name="contact[under_18]">
+      <label for="contact-under-18-field" class="nhsuk-label nhsuk-radios__label">No - this person is an adult</label>
+    </div>
+</div>
+</fieldset>
+</div>
+    <div class="nhsuk-form-group"><fieldset class="nhsuk-fieldset"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m"><h2 class="nhsuk-fieldset__heading">Country of Residence</h2></legend><div class="nhsuk-radios" data-module="nhsuk-radios">
+        <div class="nhsuk-radios__item"><input id="contact-country-of-residence-england-field" class="nhsuk-radios__input" type="radio" value="England" name="contact[country_of_residence]"><label for="contact-country-of-residence-england-field" class="nhsuk-label nhsuk-radios__label">England</label></div>
+        <div class="nhsuk-radios__item"><input id="contact-country-of-residence-wales-field" class="nhsuk-radios__input" type="radio" value="Wales" name="contact[country_of_residence]"><label for="contact-country-of-residence-wales-field" class="nhsuk-label nhsuk-radios__label">Wales</label></div>
+        <div class="nhsuk-radios__item"><input id="contact-country-of-residence-scotland-field" class="nhsuk-radios__input" type="radio" value="Scotland" name="contact[country_of_residence]"><label for="contact-country-of-residence-scotland-field" class="nhsuk-label nhsuk-radios__label">Scotland</label></div>
+        <div class="nhsuk-radios__item"><input id="contact-country-of-residence-northern-ireland-field" class="nhsuk-radios__input" type="radio" value="Northern Ireland" name="contact[country_of_residence]"><label for="contact-country-of-residence-northern-ireland-field" class="nhsuk-label nhsuk-radios__label">Northern Ireland</label></div>
+        <div class="nhsuk-radios__item"><input id="contact-country-of-residence-not-sure-field" class="nhsuk-radios__input" type="radio" value="Not sure" name="contact[country_of_residence]"><label for="contact-country-of-residence-not-sure-field" class="nhsuk-label nhsuk-radios__label">Not sure</label></div>
+</div></fieldset></div>
+    <div class="nhsuk-form-group"><fieldset class="nhsuk-fieldset"><legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m"><h2 class="nhsuk-fieldset__heading">Which best describes your exposure to them?</h2></legend><div class="nhsuk-radios" data-module="nhsuk-radios">
+      <div class="nhsuk-radios__item"><input id="contact-scenario-direct-field" class="nhsuk-radios__input" type="radio" value="direct" name="contact[scenario]"><label for="contact-scenario-direct-field" class="nhsuk-label nhsuk-radios__label">Direct contact – someone you had face to face contact with (within 1 metre) or skin to skin contact with for any length of time, or someone you were within 1 metre of for 1 minute or longer (without face to face contact)</label></div>
+      <div class="nhsuk-radios__item"><input id="contact-scenario-proximity-field" class="nhsuk-radios__input" type="radio" value="proximity" name="contact[scenario]"><label for="contact-scenario-proximity-field" class="nhsuk-label nhsuk-radios__label">Close contact – someone you were 1-2 meters away from for more than 15 minutes, or someone you travelled with in a small vehicle</label></div>
+</div>
+
+
+
+    </div>
+    <input type="submit" name="commit" value="Save contact" class="nhsuk-button nhsuk-button--primary" data-disable-with="Save contact">
+    </form>
+  </div>
+{% endblock %}

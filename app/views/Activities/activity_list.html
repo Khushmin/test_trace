@@ -1,0 +1,117 @@
+-{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Blank template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-two-thirds">
+    <h1 class="nhsuk-heading-xl">List of activities </h1>
+    <div class="nhsuk-hint" id="example-hint">
+      For the list of activities shown on the page we would like you to list your contacts and the date you last saw them
+    </div>
+
+    <dl class="nhsuk-summary-list">
+
+  <div class="nhsuk-summary-list__row">
+    <dd class="nhsuk-summary-list__key">
+      Personal care
+    </dd>
+    <dd class="nhsuk-summary-list__value">
+      Gilded Hair
+    </dd>
+
+    <dd class="nhsuk-summary-list__actions">
+
+      <a href="#">
+        Add contact
+      </a>
+
+    </dd>
+
+  </div>
+
+  <div class="nhsuk-summary-list__row">
+    <dd class="nhsuk-summary-list__key">
+      Shopping
+    </dd>
+    <dd class="nhsuk-summary-list__value">
+      Asda
+    </dd>
+
+    <dd class="nhsuk-summary-list__actions">
+
+      <a href="#">
+        Change<span class="nhsuk-u-visually-hidden"> date of birth</span>
+      </a>
+
+    </dd>
+
+  </div>
+
+  <div class="nhsuk-summary-list__row">
+    <dd class="nhsuk-summary-list__key">
+      Shopping
+    </dd>
+    <dd class="nhsuk-summary-list__value">
+      Primark
+    </dd>
+
+    <dd class="nhsuk-summary-list__actions">
+
+      <a href="#">
+        Change<span class="nhsuk-u-visually-hidden"> contact information</span>
+      </a>
+
+    </dd>
+
+  </div>
+
+  <div class="nhsuk-summary-list__row">
+    <dd class="nhsuk-summary-list__key">
+      Eating out
+    </dd>
+    <dd class="nhsuk-summary-list__value">
+      McDonalds
+    </dd>
+
+    <dd class="nhsuk-summary-list__actions">
+
+      <a href="#">
+        Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+      </a>
+
+    </dd>
+
+  </div>
+  <div class="nhsuk-summary-list__row">
+    <dd class="nhsuk-summary-list__key">
+      Eating out
+    </dd>
+    <dd class="nhsuk-summary-list__value">
+      [business name]
+    </dd>
+
+    <dd class="nhsuk-summary-list__actions">
+
+      <a href="#">
+        Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+      </a>
+
+    </dd>
+
+  </div>
+</dl>
+    </div>
+
+  </div>
+{% endblock %}
